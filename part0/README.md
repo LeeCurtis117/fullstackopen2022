@@ -54,3 +54,20 @@ browser executes the event handler
 that renders notes to display
 end note
 
+
+0.6: New note in Single page app diagram
+Create a diagram depicting the situation where the user creates a new note using the single page version of the app.
+
+![0 6_ New note in Single page app diagram](https://user-images.githubusercontent.com/18190404/209438696-68107377-9050-4b96-a136-2d2c4fd685d5.png)
+
+title 0.6: New note in Single page app diagram
+
+browser->server: HTTP get https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTTP status 200 HTML-code
+
+note over browser:
+In single page app,
+browser stays on page 
+no new HTTP request
+end note
+
