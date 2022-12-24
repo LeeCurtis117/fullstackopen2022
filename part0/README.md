@@ -30,11 +30,9 @@ end note
 0.5: Single page app diagram
 Create a diagram depicting the situation where the user goes to the single page app version of the notes app at https://studies.cs.helsinki.fi/exampleapp/spa.
 
-
+![0 5_ Single page app diagram](https://user-images.githubusercontent.com/18190404/209438497-27931926-0da0-4aa8-a6b7-8fb891870d9a.png)
 
 title 0.5: Single page app diagram
-
-![0 5_ Single page app diagram](https://user-images.githubusercontent.com/18190404/209438497-27931926-0da0-4aa8-a6b7-8fb891870d9a.png)
 
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
 server-->browser: HTTP status 200 HTML-code
