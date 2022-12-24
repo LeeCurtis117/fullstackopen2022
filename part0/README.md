@@ -27,3 +27,32 @@ app.post('/new_note', (req, res) => {
 }
 end note
 
+0.5: Single page app diagram
+Create a diagram depicting the situation where the user goes to the single page app version of the notes app at https://studies.cs.helsinki.fi/exampleapp/spa.
+
+
+
+title 0.5: Single page app diagram
+
+![0 5_ Single page app diagram](https://user-images.githubusercontent.com/18190404/209438497-27931926-0da0-4aa8-a6b7-8fb891870d9a.png)
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTTP status 200 HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa/main.css
+server-->browser:   HTTP status 200 main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa/main.js
+server-->browser:   HTTP status 200 main.js
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa/data.json
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
+
